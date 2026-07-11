@@ -1,0 +1,1144 @@
+{
+	"info": {
+		"_postman_id": "3c300496-bf20-4da2-bfbb-dcb1916cbc08",
+		"name": "Evento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46493696"
+	},
+	"item": [
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}",
+					"host": [
+						"{{base_url}}"
+					]
+				},
+				"description": "GET {{base_url}}/"
+			},
+			"response": []
+		},
+		{
+			"name": "Events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/events?event=wedding",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"events"
+					],
+					"query": [
+						{
+							"key": "event",
+							"value": "wedding"
+						}
+					]
+				},
+				"description": "GET {{base_url}}/events"
+			},
+			"response": []
+		},
+		{
+			"name": "Event Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/events/details?event_id=93",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"events",
+						"details"
+					],
+					"query": [
+						{
+							"key": "event_id",
+							"value": "93"
+						}
+					]
+				},
+				"description": "GET {{base_url}}/events/details"
+			},
+			"response": []
+		},
+		{
+			"name": "All Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/events/categories",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"events",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "event_id",
+							"value": "104",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "fname",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "lname",
+							"value": "User",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "01711452325",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Bangladesh",
+							"type": "text"
+						},
+						{
+							"key": "event_date",
+							"value": "05-05-2026",
+							"type": "text"
+						},
+						{
+							"key": "customer_id",
+							"value": "34",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Dhaka",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "660",
+							"type": "text"
+						},
+						{
+							"key": "gatewayType",
+							"value": "offline",
+							"type": "text"
+						},
+						{
+							"key": "currencyText",
+							"value": "USD",
+							"type": "text"
+						},
+						{
+							"key": "paymentStatus",
+							"value": "pending",
+							"type": "text"
+						},
+						{
+							"key": "paymentMethod",
+							"value": "PayPal",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Dhaka",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "32 kreativDev",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/event-booking",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"event-booking"
+					]
+				},
+				"description": "POST {{base_url}}/event-booking"
+			},
+			"response": []
+		},
+		{
+			"name": "Organizers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/organizers",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"organizers"
+					]
+				},
+				"description": "GET {{base_url}}/organizers"
+			},
+			"response": []
+		},
+		{
+			"name": "Organizer Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/organizers/details/24",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"organizers",
+						"details",
+						"24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/customer/signup",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customer",
+						"signup"
+					]
+				},
+				"description": "GET {{base_url}}/customer/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up (Submit)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/customer/signup/submit",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customer",
+						"signup",
+						"submit"
+					]
+				},
+				"description": "POST {{base_url}}/customer/signup/submit"
+			},
+			"response": []
+		},
+		{
+			"name": "Log In",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/customer/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customer",
+						"login"
+					]
+				},
+				"description": "GET {{base_url}}/customer/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Authentication Failed",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/customer/authentication-fail",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customer",
+						"authentication-fail"
+					]
+				},
+				"description": "GET {{base_url}}/customer/authentication-fail"
+			},
+			"response": []
+		},
+		{
+			"name": "Log In (Submit)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Test for successful login and extract token",
+							"pm.test(\"Login response contains token\", function () {",
+							"    var jsonData = {};",
+							"    try {",
+							"        jsonData = pm.response.json();",
+							"    } catch (e) {",
+							"        pm.expect.fail(\"Response is not valid JSON\");",
+							"    }",
+							"    if (jsonData && jsonData.token) {",
+							"        pm.environment.set(\"token\", jsonData.token);",
+							"        pm.expect(jsonData.token, \"Token should not be empty\").to.not.be.empty;",
+							"    } else {",
+							"        pm.environment.unset(\"token\");",
+							"        console.warn(\"Token property is missing in the response.\");",
+							"        pm.expect.fail(\"Token property is missing in the response.\");",
+							"    }",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/customer/login/submit",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customer",
+						"login",
+						"submit"
+					]
+				},
+				"description": "POST {{base_url}}/customer/login/submit"
+			},
+			"response": []
+		},
+		{
+			"name": "Dashboard",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/customers/dashboard",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customers",
+						"dashboard"
+					]
+				},
+				"description": "GET {{base_url}}/customers/dashboard"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "24|0hvpfyihtaivwWZXM19okChLx9j42Gj8ljH5Hq2o87582f66",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/customers/edit-profile",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customers",
+						"edit-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "24|0hvpfyihtaivwWZXM19okChLx9j42Gj8ljH5Hq2o87582f66",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "goutams1048@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "940344",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "000000",
+							"type": "text"
+						},
+						{
+							"key": "new_password_confirmation",
+							"value": "000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/customer/reset-password-update",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customer",
+						"reset-password-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My Bookings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/customers/bookings",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customers",
+						"bookings"
+					]
+				},
+				"description": "GET {{base_url}}/customers/bookings"
+			},
+			"response": []
+		},
+		{
+			"name": "Booking Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/customers/booking/details?booking_id=123",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customers",
+						"booking",
+						"details"
+					],
+					"query": [
+						{
+							"key": "booking_id",
+							"value": "123"
+						}
+					]
+				},
+				"description": "GET {{base_url}}/customers/booking/details"
+			},
+			"response": []
+		},
+		{
+			"name": "Wishlists",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|OKUUgRvtWow1EOqlxx6GGMjslbHNxRMLJVCVX0B53d51481e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/customers/wishlists",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customers",
+						"wishlists"
+					]
+				},
+				"description": "GET {{base_url}}/customers/wishlists"
+			},
+			"response": []
+		},
+		{
+			"name": "Add to Wishlist",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|OKUUgRvtWow1EOqlxx6GGMjslbHNxRMLJVCVX0B53d51481e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "event_id",
+							"value": "103",
+							"type": "text"
+						},
+						{
+							"key": "customer_id",
+							"value": "34",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/customers/wishlists/store",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customers",
+						"wishlists",
+						"store"
+					]
+				},
+				"description": "POST {{base_url}}/customers/wishlists/store"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Support Ticket",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/customers/support-ticket/store",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customers",
+						"support-ticket",
+						"store"
+					]
+				},
+				"description": "POST {{base_url}}/customers/support-ticket/store"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Wishlist Item",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/customers/wishlists/delete",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customers",
+						"wishlists",
+						"delete"
+					]
+				},
+				"description": "GET {{base_url}}/customers/wishlists/delete"
+			},
+			"response": []
+		},
+		{
+			"name": "Support Tickets",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "29|SXff5BS1dZOU24KjwFQTIF4bC0mghcb4zmZi56MYcdce086d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/customers/support-tickets",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customers",
+						"support-tickets"
+					]
+				},
+				"description": "GET {{base_url}}/customers/support-tickets"
+			},
+			"response": []
+		},
+		{
+			"name": "Support Ticket Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "29|SXff5BS1dZOU24KjwFQTIF4bC0mghcb4zmZi56MYcdce086d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/customers/support-ticket/details/?ticket_id=21",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customers",
+						"support-ticket",
+						"details",
+						""
+					],
+					"query": [
+						{
+							"key": "ticket_id",
+							"value": "21"
+						}
+					]
+				},
+				"description": "GET {{base_url}}/customers/support-ticket/details"
+			},
+			"response": []
+		},
+		{
+			"name": "Reply to Support Ticket",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/customers/support-ticket/reply",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customers",
+						"support-ticket",
+						"reply"
+					]
+				},
+				"description": "POST {{base_url}}/customers/support-ticket/reply"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Password",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "28|nOvGYj9Go4Pl3xweXnwg8Pa2d0toDVubcx19aiRDfae1a381",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "goutams1048@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "940344",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "000000",
+							"type": "text"
+						},
+						{
+							"key": "new_password_confirmation",
+							"value": "000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}",
+					"host": [
+						"{{base_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forget  Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "goutams1048@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/customer/forget-password",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customer",
+						"forget-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "goutams1048@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "940344",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "000000",
+							"type": "text"
+						},
+						{
+							"key": "new_password_confirmation",
+							"value": "000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/customer/reset-password-update",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customer",
+						"reset-password-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Language",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/get-lang/ar",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"get-lang",
+						"ar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/get-basic",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"get-basic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrgContact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "organizer_id",
+							"value": "24",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Check",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "goutam052597@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "subject",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/organizers/contact-mail",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"organizers",
+						"contact-mail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FirebaseFCM",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/save-fcm-token?token=duh4aJWBSzGidUAe9zUvrI:APA91bHP4EG0BD2bYKMwyRKR7WCtbV8nKL9Pghk-Ppd_OghP_VnHvS_1QTjJkghoU3qvTSp1b5br-8kUId5UeIWfRYEc2um9sBpxyZH5aIA887puRMMcfYk",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"save-fcm-token"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "duh4aJWBSzGidUAe9zUvrI:APA91bHP4EG0BD2bYKMwyRKR7WCtbV8nKL9Pghk-Ppd_OghP_VnHvS_1QTjJkghoU3qvTSp1b5br-8kUId5UeIWfRYEc2um9sBpxyZH5aIA887puRMMcfYk"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://192.168.0.187:8000/api"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "default"
+		}
+	]
+}

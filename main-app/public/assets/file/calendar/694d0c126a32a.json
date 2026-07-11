@@ -1,0 +1,5438 @@
+{
+	"info": {
+		"_postman_id": "8fca8765-6e14-454d-8b85-f35bf7d6fe97",
+		"name": "Bookapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46493696"
+	},
+	"item": [
+		{
+			"name": "Vendor Api",
+			"item": [
+				{
+					"name": "Service Management Api",
+					"item": [
+						{
+							"name": "https://bookapp.test/api/vendor/services",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://masud.kreativdev.com/bookapp/api/vendor/services",
+									"protocol": "https",
+									"host": [
+										"masud",
+										"kreativdev",
+										"com"
+									],
+									"path": [
+										"bookapp",
+										"api",
+										"vendor",
+										"services"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/service/create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/service/create",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"service",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/service/store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "service_image",
+											"type": "file",
+											"src": "postman-cloud:///1f0622dc-05f8-4060-8bc2-ab745a80b740"
+										},
+										{
+											"key": "slider_images[]",
+											"type": "file",
+											"src": [
+												"postman-cloud:///1f0622dd-09b3-4b90-9db0-5b9dde58ba2d",
+												"postman-cloud:///1f0622dc-05f8-4060-8bc2-ab745a80b740"
+											]
+										},
+										{
+											"key": "price",
+											"value": "100",
+											"type": "text"
+										},
+										{
+											"key": "prev_price",
+											"value": "200",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "latitude",
+											"value": "22.6515902",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "87.95553489999999",
+											"type": "text"
+										},
+										{
+											"key": "person_type",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "person",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "zoom_meeting",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "calender_status",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "en_name",
+											"value": "test service from postman",
+											"type": "text"
+										},
+										{
+											"key": "en_category_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "en_subcategory_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "en_address",
+											"value": "test service from postman",
+											"type": "text"
+										},
+										{
+											"key": "en_features",
+											"value": "test service from postman",
+											"type": "text"
+										},
+										{
+											"key": "en_description",
+											"value": "test service from postman",
+											"type": "text"
+										},
+										{
+											"key": "en_meta_keyword",
+											"value": "test service from postman",
+											"type": "text"
+										},
+										{
+											"key": "en_meta_description",
+											"value": "test service from postman",
+											"type": "text"
+										},
+										{
+											"key": "vendor_id",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/service/store",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"service",
+										"store"
+									]
+								},
+								"description": "### Endpoint: `https://bookapp.test/api/vendor/service/store`\n\n### Method: `POST`\n\nThis endpoint is used to store a new service provided by a vendor. The request requires various parameters that include both text fields and file uploads.\n\n#### Request Parameters:\n\n- **service_image** (file): The main image associated with the service.\n    \n- **slider_images\\[\\]** (file): An array of images for the service slider.\n    \n- **price** (text): The price of the service.\n    \n- **prev_price** (text): The previous price of the service (if applicable).\n    \n- **status** (text): The current status of the service (e.g., active, inactive).\n    \n- **latitude** (text): The latitude of the service location.\n    \n- **longitude** (text): The longitude of the service location.\n    \n- **person_type** (text): Type of person associated with the service (e.g., individual, company).\n    \n- **person** (text): Number of person ( it should be integer number)\n    \n- **zoom_meeting** (text): Zoom status between(1,0)\n    \n- **calender_status** (text): Calender status between(1,0)\n    \n- **vendor_id** (text): The ID of the vendor offering the service.\n    \n\n#### Language dependency key:\n\n- **en_name** (text): The name of the service in English.\n    \n- **en_category_id** (text): The category ID for the service in English.\n    \n- **en_subcategory_id** (text): The subcategory ID for the service in English.\n    \n- **en_address** (text): The address of the service in English.\n    \n- **en_features** (text): Features of the service in English.\n    \n- **en_description** (text): A description of the service in English.\n    \n- **en_meta_keyword** (text): Meta keywords for SEO in English.\n    \n- **en_meta_description** (text): Meta description for SEO in English."
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/service/edit/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/service/edit/76",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"service",
+										"edit",
+										"76"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/service/update/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/service/update/76",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"service",
+										"update",
+										"76"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/service/update-status",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "service_id",
+											"value": "28",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/service/update-status",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"service",
+										"update-status"
+									]
+								},
+								"description": "## Update Service Status\n\nThis endpoint allows vendors to update the status of a specific service in the system.\n\n### Request\n\n- **Method**: POST\n    \n- **URL**: `https://bookapp.test/api/vendor/service/update-status`\n    \n\n#### Request Body (form-data)\n\n| Key | Type | Description |\n| --- | --- | --- |\n| service_id | text | The unique identifier of the service to be updated. |\n| status | text | The new status to be set for the service. |\n\n### Response\n\n- **Status Code**: 403\n    \n- **Content-Type**: application/json\n    \n\n#### Response Body\n\n``` json\n{\n    \"success\": true,\n    \"message\": \"\"\n}\n\n ```\n\nThe response indicates the success of the operation, although a 403 status code typically suggests that the request was not authorized."
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/service/destroy/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/service/destroy/76",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"service",
+										"destroy",
+										"76"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/service/bulk-destroy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"ids\": [\"78\", \"77\"]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/service/bulk-destroy",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"service",
+										"bulk-destroy"
+									]
+								},
+								"description": "## Bulk Destroy Services\n\nThis endpoint allows you to delete multiple services in bulk by providing an array of service IDs. It is particularly useful for managing and cleaning up services efficiently.\n\n### Request\n\n- **Method**: POST\n    \n- **URL**: `https://bookapp.test/api/vendor/service/bulk-destroy`\n    \n- **Content-Type**: application/json\n    \n\n#### Inputs Fields:\n\n- ids -> array value pass"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Staff Management Api",
+					"item": [
+						{
+							"name": "https://bookapp.test/api/vendor/staff",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/create",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/create",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "staff_image",
+											"type": "file",
+											"src": "postman-cloud:///1f0622dc-05f8-4060-8bc2-ab745a80b740"
+										},
+										{
+											"key": "username",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "en_name",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "test@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "000000000000000",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "show_email_addresss",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "show_information",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "show_phone",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "order_number",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "login_allow_toggle",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/store",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"store"
+									]
+								},
+								"description": "## Endpoint Description\n\nThis endpoint is used to create a new staff member in the vendor's system. By sending a POST request to `https://bookapp.test/api/vendor/staff/store`, you can register a staff member with various details including their personal information and preferences.\n\n### Request Format\n\nThe request must be sent in `form-data` format with the following parameters:\n\n- **staff_image** (file): An image file representing the staff member's profile picture.\n    \n- **username** (text): The desired username for the staff member.\n    \n- **en_name** (text): The English name of the staff member.\n    \n- **password** (text): The password for the staff member's account.\n    \n- **email** (text): The email address of the staff member.\n    \n- **phone** (text): The phone number of the staff member.\n    \n- **status** (text): (value should between 0 ,1)\n    \n- **show_email_addresss** (text): (value should between 0 ,1)\n    \n- **show_information** (text): (value should between 0 ,1)\n    \n- **show_phone** (text): (value should between 0 ,1)\n    \n- **order_number** (text): This is integer value\n    \n- **login_allow_toggle** (text): A flag indicating whether the staff member is allowed to log in."
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/edit/{id}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/edit/47",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"edit",
+										"47"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/update/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/update/47",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"update",
+										"47"
+									]
+								},
+								"description": "## Endpoint Description\n\nThis endpoint is used to create a new staff member in the vendor's system. By sending a POST request to `https://bookapp.test/api/vendor/staff/store`, you can register a staff member with various details including their personal information and preferences.\n\n### Request Format\n\nThe request must be sent in `form-data` format with the following parameters:\n\n- **staff_image** (file): An image file representing the staff member's profile picture.\n    \n- **username** (text): The desired username for the staff member.\n    \n- **en_name** (text): The English name of the staff member.\n    \n- **password** (text): The password for the staff member's account.\n    \n- **email** (text): The email address of the staff member.\n    \n- **phone** (text): The phone number of the staff member.\n    \n- **status** (text): (value should between 0 ,1)\n    \n- **show_email_addresss** (text): (value should between 0 ,1)\n    \n- **show_information** (text): (value should between 0 ,1)\n    \n- **show_phone** (text): (value should between 0 ,1)\n    \n- **order_number** (text): This is integer value\n    \n- **login_allow_toggle** (text): A flag indicating whether the staff member is allowed to log in."
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/destroy/{id}",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/destroy/47",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"destroy",
+										"47"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/bulk-destroy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ids\":[]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/bulk-destroy",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"bulk-destroy"
+									]
+								},
+								"description": "## Bulk Destroy Staff Members\n\nThis endpoint allows you to delete multiple staff members in bulk from the vendor's staff list.\n\n### Request\n\n- **Method**: POST\n    \n- **Endpoint**: `https://bookapp.test/api/vendor/staff/bulk-destroy`\n    \n\n### Request Body\n\nThe request body must be a JSON object containing the following parameter:\n\n- `ids` (Array): This is an array of identifiers for the staff members you wish to delete. It should contain the IDs of the staff members as strings. If the array is empty, no staff members will be deleted.\n    \n\n### Response Format\n\nUpon a successful request, the API will return a response indicating the result of the operation. The expected response format is typically a JSON object that confirms the deletion of the specified staff members or provides an error message if the operation fails.\n\n### Example Request\n\n``` json\n{\n  \"ids\": [\"staff_id_1\", \"staff_id_2\"]\n}\n\n ```\n\n### Example Response\n\n``` json\n{\n  \"success\": true,\n  \"message\": \"Staff members deleted successfully.\"\n}\n\n ```"
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/staff-status",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "staff_id",
+											"value": "13",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/staff-status",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"staff-status"
+									]
+								},
+								"description": "## Update Staff Status\n\nThis endpoint allows you to update the status of a specific staff member in the system. By sending a POST request to this endpoint, you can change the operational status of a staff member identified by their unique `staff_id`.\n\n### Request Parameters\n\nThe request requires the following query parameters:\n\n- `staff_id` (integer): The unique identifier of the staff member whose status is being updated.\n    \n- `status` (integer): The new status to be assigned to the staff member. This is typically a binary value where `1` may represent \"active\" and `0` may represent \"inactive\".\n    \n\n### Response Structure\n\nUpon a successful request, the API will return a JSON response with the following structure:\n\n- `success` (boolean): Indicates whether the status update was successful.\n    \n- `message` (string): A message providing additional information about the request. This may be empty if no additional information is necessary.\n    \n\n### Example Response\n\n``` json\n{\n  \"success\": true,\n  \"message\": \"\"\n}\n\n ```\n\nA `200` status code indicates that the request was processed successfully. If the update fails, the response may contain an error message detailing the reason for the failure."
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/permission/{id}",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "13",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/permission/13",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"permission",
+										"13"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/permission-update/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "service_add",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "service_edit",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "service_delete",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "time",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/permission-update/13",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"permission-update",
+										"13"
+									]
+								},
+								"description": "## Update Staff Permissions\n\nThis endpoint allows you to update the permissions for a specific staff member in the vendor application. By sending a POST request to the designated URL, you can modify the permissions related to adding, editing, and deleting services, as well as setting the time associated with these actions.\n\n### Request Format\n\n**URL:** `https://bookapp.test/api/vendor/staff/permission-update/{staff_id}`  \n**Method:** POST\n\n**Request Body (form-data):( value should be** _**0 or 1**_\n\n- `service_add` (0 or 1): Permission to add services.\n    \n- `service_edit` (0 or 1): Permission to edit services.\n    \n- `service_delete` (0 or 1): Permission to delete services.\n    \n- `time` (string): Time-related permissions.\n    \n\nEach of these parameters should be included in the form-data of the request body as key-value pairs.\n\n### Example Response\n\n``` json\n{\n  \"success\": true,\n  \"message\": \"\"\n}\n\n ```\n\nThis response indicates that the permissions were updated successfully without any additional message."
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/change-password/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/change-password/13",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"change-password",
+										"13"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/update-password/{id}",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "new_password",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "new_password_confirmation",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/update-password/13",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"update-password",
+										"13"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/days/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/days/13",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"days",
+										"13"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/schedule-type/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "is_day",
+											"value": "1",
+											"description": "value should between 1 or 0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/schedule-type/13",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"schedule-type",
+										"13"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/time-slots",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/time-slots?day_id=22&staff_id=13",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"time-slots"
+									],
+									"query": [
+										{
+											"key": "day_id",
+											"value": "22"
+										},
+										{
+											"key": "staff_id",
+											"value": "13"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/store/time-slot",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "start_time",
+											"value": "12:00 AM",
+											"description": "required",
+											"type": "text"
+										},
+										{
+											"key": "end_time",
+											"value": "3:00 AM",
+											"description": "required",
+											"type": "text"
+										},
+										{
+											"key": "staff_id",
+											"value": "13",
+											"description": "required",
+											"type": "text"
+										},
+										{
+											"key": "max_booking",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "staff_day_id",
+											"value": "22",
+											"description": "required",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/store/time-slot",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"store",
+										"time-slot"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/update-time-slot",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "start_time",
+											"value": "12:00 AM",
+											"type": "text"
+										},
+										{
+											"key": "end_time",
+											"value": "3:00 AM",
+											"type": "text"
+										},
+										{
+											"key": "staff_id",
+											"value": "13",
+											"type": "text"
+										},
+										{
+											"key": "staff_day_id",
+											"value": "22",
+											"type": "text"
+										},
+										{
+											"key": "max_booking",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "id\n",
+											"value": "1",
+											"description": "time slot id",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/update-time-slot",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"update-time-slot"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/time-slot/destroy/{id}",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/time-slot/destroy/3",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"time-slot",
+										"destroy",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/time-slot/bulk-destroy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ids\":[2,3]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/time-slot/bulk-destroy",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"time-slot",
+										"bulk-destroy"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/change-weekend/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/change-weekend/22?staff_id=13&is_weekend=0",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"change-weekend",
+										"22"
+									],
+									"query": [
+										{
+											"key": "staff_id",
+											"value": "13"
+										},
+										{
+											"key": "is_weekend",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/holidays/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/holidays/13",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"holidays",
+										"13"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/holiday/store",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "date",
+											"value": "07/24/2025",
+											"type": "text"
+										},
+										{
+											"key": "staff_id",
+											"value": "13",
+											"type": "text"
+										},
+										{
+											"key": "vendor_id",
+											"value": "7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/holiday/store",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"holiday",
+										"store"
+									]
+								},
+								"description": "## Add Staff Holiday\n\nThis endpoint allows vendors to store holiday information for their staff members. By sending a POST request to this endpoint, you can register a holiday date for a specific staff member associated with a vendor.\n\n### Request Parameters\n\nThe request body must be sent as form-data and should include the following parameters:\n\n- **date** (string): The date of the holiday being recorded. This should be formatted appropriately to ensure accurate storage.\n    \n- **staff_id** (string): The unique identifier for the staff member whose holiday is being recorded.\n    \n- **vendor_id** (string): The unique identifier for the vendor associated with the staff member.\n    \n\n### Response Structure\n\nUpon a successful request, the API will return a JSON response with the following structure:\n\n- **success** (boolean): Indicates whether the operation was successful.\n    \n- **message** (string): A message providing additional context about the operation. This may be empty.\n    \n\n### Example Response\n\n``` json\n{\n  \"success\": true,\n  \"message\": \"\"\n}\n\n ```\n\n### Status Codes\n\n- **200 OK**: The request was successful, and the holiday information has been stored."
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/holiday/destory/{id}",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/holiday/destory/37?staff_id=13",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"holiday",
+										"destory",
+										"37"
+									],
+									"query": [
+										{
+											"key": "staff_id",
+											"value": "13"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/staff/holiday/bulk-destory",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/staff/holiday/bulk-destory",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"staff",
+										"holiday",
+										"bulk-destory"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Basic Api",
+					"item": [
+						{
+							"name": "https://bookapp.test/api/vendor/signup",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/signup",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/signup/submit",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "testvendor",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "test@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "testvendor",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "testvendor",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/signup/submit",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"signup",
+										"submit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/login",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/login",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/login/submit",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "tomhughes",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "tomhughes",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://masud.kreativdev.com/bookapp/api/vendor/login/submit",
+									"protocol": "https",
+									"host": [
+										"masud",
+										"kreativdev",
+										"com"
+									],
+									"path": [
+										"bookapp",
+										"api",
+										"vendor",
+										"login",
+										"submit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/dashboard",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/dashboard",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"dashboard"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/updated-password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "current_password",
+											"value": "tomhughestomhughes",
+											"type": "text"
+										},
+										{
+											"key": "new_password",
+											"value": "tomhughes",
+											"type": "text"
+										},
+										{
+											"key": "new_password_confirmation",
+											"value": "tomhughes",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/updated-password",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"updated-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/updated-profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "photo",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "en_name",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/updated-profile",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"updated-profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/subscription-log",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/ecmascript",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/subscription-log?search",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"subscription-log"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": null,
+											"description": "this search value is transaction_id"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/package-list",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/package-list",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"package-list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/package/checkout/{package_id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/package/checkout/2",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"package",
+										"checkout",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/recevied/email",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://masud.kreativdev.com/bookapp/api/vendor/recevied/email",
+									"protocol": "https",
+									"host": [
+										"masud",
+										"kreativdev",
+										"com"
+									],
+									"path": [
+										"bookapp",
+										"api",
+										"vendor",
+										"recevied",
+										"email"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/recevied/update/email",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "to_mail",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "id",
+											"value": "",
+											"description": "vendor id",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/recevied/update/email",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"recevied",
+										"update",
+										"email"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/transcation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/transcation?transaction_id",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"transcation"
+									],
+									"query": [
+										{
+											"key": "transaction_id",
+											"value": null,
+											"description": "transaction search param"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/service-inquiry",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/service-inquiry",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"service-inquiry"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Support Ticket Api",
+					"item": [
+						{
+							"name": "https://bookapp.test/api/vendor/support/tickets",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/support/tickets?status",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"support",
+										"tickets"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": null,
+											"description": "param for searching"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/support/ticket/store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "subject",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "attachment",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "user_type",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/support/ticket/store",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"support",
+										"ticket",
+										"store"
+									]
+								},
+								"description": "## Endpoint Description\n\nThis endpoint allows users to submit a support ticket to the vendor. It is designed to collect necessary information regarding the issue the user is facing, including contact details, a description of the problem, and any relevant attachments.\n\n### Request\n\n**Method:** POST  \n**URL:** `https://bookapp.test/api/vendor/support/ticket/store`\n\n#### Request Body (form-data)\n\nThe request body must be sent as form-data with the following parameters:\n\n- **email** (text): The email address of the user submitting the ticket.\n    \n- **subject** (text): A brief subject line summarizing the issue.\n    \n- **attachment** (file): An optional file attachment that may provide additional context or evidence related to the ticket.\n    \n- **user_type** (text): The type of user submitting the ticket (e.g., customer, vendor).\n    \n- **description** (text): A detailed description of the issue being reported.\n    \n- **user_id** (text): The unique identifier of the user submitting the ticket.\n    \n\n### Response\n\nThe response will be in JSON format and will include the following structure:\n\n- **success** (boolean): Indicates whether the ticket submission was successful.\n    \n- **errors** (object): Contains any validation errors that occurred during the submission process. Each key corresponds to a request parameter that failed validation, with an array of error messages.\n    \n\n#### Example Response\n\n``` json\n{\n  \"success\": true,\n  \"errors\": {\n    \"email\": [\"\"],\n    \"subject\": [\"\"]\n  }\n}\n\n ```\n\n### Status Codes\n\n- **422 Unprocessable Entity**: This status code indicates that the request was well-formed but contained validation errors. The `errors` object will provide details on which fields failed validation.\n    \n\nEnsure that all required fields are filled out correctly to avoid validation errors."
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/support/ticket/message/{id}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/support/ticket/message/{id}",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"support",
+										"ticket",
+										"message",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/support/ticket/reply/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "reply",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/support/ticket/reply/{id}",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"support",
+										"ticket",
+										"reply",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/support/ticket/delete/{id}",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/support/ticket/delete/{id}",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"support",
+										"ticket",
+										"delete",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Withdraw Api",
+					"item": [
+						{
+							"name": "https://bookapp.test/api/vendor/withdraw",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/withdraw",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"withdraw"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/withdraw/create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/withdraw/create",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"withdraw",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/withdraw/get-method/input/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/withdraw/get-method/input/23",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"withdraw",
+										"get-method",
+										"input",
+										"23"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/withdraw/calculation/{method}/{amount}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/withdraw/calculation/23/46",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"withdraw",
+										"calculation",
+										"23",
+										"46"
+									]
+								},
+								"description": "### Endpoint Description\n\nThis endpoint calculates the withdrawal details for a vendor based on the provided parameters. It retrieves the total charges, the balance to be received, and the user's current balance for a specific transaction.\n\n### Request\n\n- **Method**: GET\n    \n- **URL**: `https://bookapp.test/api/vendor/withdraw/calculation/{vendorId}/{transactionId}`\n    \n\n#### Path Parameters\n\n- method : method id\n    \n- amount: input amount"
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/withdraw/send-request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "withdraw_method",
+											"value": "23",
+											"type": "text"
+										},
+										{
+											"key": "withdraw_amount",
+											"value": "50",
+											"type": "text"
+										},
+										{
+											"key": "Account_Name",
+											"value": "Masud Rana",
+											"description": "this input field create by daynamically",
+											"type": "text"
+										},
+										{
+											"key": "Account_Number",
+											"value": "0125455577",
+											"description": "this input field create by daynamically",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/withdraw/send-request",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"withdraw",
+										"send-request"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/withdraw/delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "109",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/withdraw/delete",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"withdraw",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/withdraw/bulk-delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ids\":[110,111,112]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/withdraw/bulk-delete",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"withdraw",
+										"bulk-delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Plugin Api",
+					"item": [
+						{
+							"name": "https://bookapp.test/api/vendor/plugins",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "305|sQ2e9cRrllJhkSyFM67SozZqryEnSHFkY94uy5G86a54574e",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://masud.kreativdev.com/bookapp/api/vendor/plugins",
+									"protocol": "https",
+									"host": [
+										"masud",
+										"kreativdev",
+										"com"
+									],
+									"path": [
+										"bookapp",
+										"api",
+										"vendor",
+										"plugins"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/plugins/zoom/update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "zoom_account_id",
+											"value": "sdfsdf",
+											"type": "text"
+										},
+										{
+											"key": "zoom_client_id",
+											"value": "sdfsdf",
+											"type": "text"
+										},
+										{
+											"key": "zoom_client_secret",
+											"value": "sdfsdf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/plugins/zoom/update",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"plugins",
+										"zoom",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/plugins/calendar/update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "google_calendar",
+											"type": "file",
+											"src": "/C:/Users/Masud Rana/Desktop/txt.json"
+										},
+										{
+											"key": "calender_id",
+											"value": "sdfgsdfgsdfgsdfgsdfgsdfg",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/plugins/calendar/update",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"plugins",
+										"calendar",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Appointment Api",
+					"item": [
+						{
+							"name": "https://bookapp.test/api/vendor/appointment/settings",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/appointment/settings",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"appointment",
+										"settings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/appointment/update/settings",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "booking_type",
+											"value": "deactive",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/appointment/update/settings",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"appointment",
+										"update",
+										"settings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/appointment/all",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/appointment/all",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"appointment",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/appointment/pending",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/appointment/pending",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"appointment",
+										"pending"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/appointment/accepted",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/appointment/accepted",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"appointment",
+										"accepted"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/appointment/rejected",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/appointment/rejected",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"appointment",
+										"rejected"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/appointment/update/appointment-status/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "order_status",
+											"value": "",
+											"description": "(pending,accepted,rejected)",
+											"type": "text"
+										},
+										{
+											"key": "refund",
+											"value": "",
+											"description": "it's nullable property",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/appointment/update/appointment-status/{id}",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"appointment",
+										"update",
+										"appointment-status",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/appointment/staff/assign",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "staff_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/appointment/staff/assign",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"appointment",
+										"staff",
+										"assign"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/appointment/details/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/appointment/details/{id}",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"appointment",
+										"details",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/appointment/delete/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/appointment/delete/{id}",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"appointment",
+										"delete",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/appointment/bulk-destroy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ids\":[1,2,3]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/appointment/bulk-destroy",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"appointment",
+										"bulk-destroy"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Schedule Api",
+					"item": [
+						{
+							"name": "https://bookapp.test/api/vendor/schedule/days",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/schedule/days",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"schedule",
+										"days"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/schedule/weekend-change/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "is_weekend",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/schedule/weekend-change/43",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"schedule",
+										"weekend-change",
+										"43"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/schedule/time-slots",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/schedule/time-slots?day_id=44",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"schedule",
+										"time-slots"
+									],
+									"query": [
+										{
+											"key": "day_id",
+											"value": "44"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/schedule/time-slots/store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "start_time",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "end_time",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "global_day_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "max_booking",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/schedule/time-slots/store",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"schedule",
+										"time-slots",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/schedule/time-slots/update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "8|141iZuNqX4TP407aVNd7uBcukA8bh3I8XOI1WJSk9c1e420b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/schedule/time-slots/update",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"schedule",
+										"time-slots",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/schedule/time-slots/destroy/{id}",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/schedule/time-slots/destroy/{id}",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"schedule",
+										"time-slots",
+										"destroy",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/schedule/time-slots/bulk-delete",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/schedule/time-slots/bulk-delete",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"schedule",
+										"time-slots",
+										"bulk-delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/schedule/holiday",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/schedule/holiday",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"schedule",
+										"holiday"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/schedule/holiday/store",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/schedule/holiday/store",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"schedule",
+										"holiday",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/schedule/holiday/delete/{id}",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/schedule/holiday/delete/{id}",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"schedule",
+										"holiday",
+										"delete",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://bookapp.test/api/vendor/schedule/holiday/bulke-destory",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://bookapp.test/api/vendor/schedule/holiday/bulke-destory",
+									"protocol": "https",
+									"host": [
+										"bookapp",
+										"test"
+									],
+									"path": [
+										"api",
+										"vendor",
+										"schedule",
+										"holiday",
+										"bulke-destory"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customer Api",
+			"item": [
+				{
+					"name": "https://bookapp.test/api",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://php82.kreativdev.com/bookapp/demo/api",
+							"protocol": "https",
+							"host": [
+								"php82",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"demo",
+								"api"
+							]
+						},
+						"description": "# Home Page API"
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/services",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/services/",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"services",
+								""
+							]
+						},
+						"description": "# Service page API"
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/services/search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "30|pQgaX4hthpXQVGriQ59VZyYip2HBhdFSQACyDgef51f06119",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/services/search?category=doctor",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"services",
+								"search"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "doctor"
+								}
+							]
+						},
+						"description": "#### I have listed the request parameters below, indicating which ones are actually functional.\n\n- category = used to filter and search results based on the selected category.\n    \n- subcategory = used to filter and search results based on the selected subcategory .\n    \n- max_val = defines the maximum price range for filtering services.\n    \n- min_val = defines the minimum price range for filtering services.\n    \n- location_val = services based on location or service address\n    \n- service_title = search by service name\n    \n- rating = services based on user rating\n    \n- sort_val = sort the restults"
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/services/details/{slug}/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/services/details/reliable-plumbing-services/2",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"services",
+								"details",
+								"reliable-plumbing-services",
+								"2"
+							]
+						},
+						"description": "# **Service details page api**\n\n#### **required params**\n\n- slug = slug means service slug\n    \n- id = id means service_id"
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/services/get-staff-content/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/services/get-staff-content/1",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"services",
+								"get-staff-content",
+								"1"
+							]
+						},
+						"description": "#### Displaying staff content that is assigned according to the selected service\n\n{id} = service id\n\nhere an example => [https://prnt.sc/wXq9imhs85Tw](https://prnt.sc/wXq9imhs85Tw)"
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/services/check-date-time/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/services/check-date-time/16?service_id=2",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"services",
+								"check-date-time",
+								"16"
+							],
+							"query": [
+								{
+									"key": "service_id",
+									"value": "2"
+								}
+							]
+						},
+						"description": "{id} = staff id\n\nalso need to pass **service_id** param"
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/services/show-staff-hour/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/services/show-staff-hour/?dayName=Wednesday&staff_id=16&bookingDate=2025-07-16&vendor_id=3&serviceId=2",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"services",
+								"show-staff-hour",
+								""
+							],
+							"query": [
+								{
+									"key": "dayName",
+									"value": "Wednesday"
+								},
+								{
+									"key": "staff_id",
+									"value": "16"
+								},
+								{
+									"key": "bookingDate",
+									"value": "2025-07-16"
+								},
+								{
+									"key": "vendor_id",
+									"value": "3"
+								},
+								{
+									"key": "serviceId",
+									"value": "2"
+								}
+							]
+						},
+						"description": "## Showing staff valid booking hour API\n\n#### **this api call after click a date**\n\nrequired parmas:\n\n- staff_id\n    \n- vendor_id\n    \n- bookingDate\n    \n- dayName\n    \n- serviceId\n    \n\n**(dayName)** must be like **Wednesday**,**Friday** etc...\n\n**(bookingDate)** should **YYYY-MM-DD** format"
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/services/billing-form/submit",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/services/billing-form/submit?name=Masud Rana&phone=01254875&email=masud@gmail.com&address=dhaka",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"services",
+								"billing-form",
+								"submit"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Masud Rana"
+								},
+								{
+									"key": "phone",
+									"value": "01254875"
+								},
+								{
+									"key": "email",
+									"value": "masud@gmail.com"
+								},
+								{
+									"key": "address",
+									"value": "dhaka"
+								}
+							]
+						},
+						"description": "## Submit service billing form API\n\n### Note: (v) = validation required\n\n### **parmas (this is not form data):**\n\n- name (v)\n    \n- phone (v)\n    \n- email (v)\n    \n- address (v)\n    \n- zip_code\n    \n- country\n    \n- booking_date\n    \n- user_id\n    \n- staff_id\n    \n- service_houre_id\n    \n- max_person"
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "30|pQgaX4hthpXQVGriQ59VZyYip2HBhdFSQACyDgef51f06119",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/login",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/login/submit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "user",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://php82.kreativdev.com/bookapp/demo/api/customer/login/submit",
+							"protocol": "https",
+							"host": [
+								"php82",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"demo",
+								"api",
+								"customer",
+								"login",
+								"submit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/signup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/signup",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/signup/submit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "masud",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ranaahmed269205@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "masud1234",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "masud1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/signup/submit",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"signup",
+								"submit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/logout",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|GLL52Vo0wGW4s9FFKx63EaefhsTsu109KD9YRsNi22b351c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/logout",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/dashboard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "138|aSY5iOH7XoFrPtxM6Fg6ILxDwAWSB6Y3AZtNJamq8c3dc15e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/dashboard",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/wishlist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "190|9c5LsbVvab5TJuWDyyzJJSuANT0FzB7VWcJqatb007e1517e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/wishlist",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"wishlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/appointment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "139|26D1lAfpzlmBuV8Q2KO9MStTXD7ediCUSMaAyjo456cd2f63",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/appointment",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"appointment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/appointment/details/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "153|biq6Sw4XfzdAvoLIPW5LHXns8WFCr1g4Jjxnwn2t0b0012d4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/appointment/details/783",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"appointment",
+								"details",
+								"783"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "139|26D1lAfpzlmBuV8Q2KO9MStTXD7ediCUSMaAyjo456cd2f63",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/order",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/order/details/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "157|C0Fj7CmrIgqz6kKOiXBrmN12RKMLfhbcy2vQTeBYdf2e7ed6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/order/",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"order",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/order/product-download/{product_id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "28|573GbVaiy00e6GzYaWNz2o0fSooETsI0yg99nq4Y30b93b35",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/order/product-download/16",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"order",
+								"product-download",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/edit-profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "72|zXKFZ9z49EvoBCOZueydXKHXa7ntEXz01FAWlkYV220d9720",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/edit-profile",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"edit-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/update-profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "28|573GbVaiy00e6GzYaWNz2o0fSooETsI0yg99nq4Y30b93b35",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Masud Rana",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "masud",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "masud@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/update-profile",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"update-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/change-password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "28|573GbVaiy00e6GzYaWNz2o0fSooETsI0yg99nq4Y30b93b35",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/change-password",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/customer/update-password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "28|573GbVaiy00e6GzYaWNz2o0fSooETsI0yg99nq4Y30b93b35",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "current_password",
+									"value": "ffffff",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "masudrana",
+									"type": "text"
+								},
+								{
+									"key": "new_password_confirmation",
+									"value": "masudrana",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/update-password",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"update-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/services/addto/wishlist/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "30|pQgaX4hthpXQVGriQ59VZyYip2HBhdFSQACyDgef51f06119",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/services/addto/wishlist/3",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"services",
+								"addto",
+								"wishlist",
+								"3"
+							]
+						},
+						"description": "add to wishlist api for services\n\nhere {id} means service_id"
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/services/remove/wishlist/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "194|pqDEUoMWDqXJ1ipj2VSVv2UWBaKLu6TkpATPJxmkadbbb348",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/services/remove/wishlist/3",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"services",
+								"remove",
+								"wishlist",
+								"3"
+							]
+						},
+						"description": "remove wishlist api for services\n\nhere {id} means service_id"
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/services/store-review/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "30|pQgaX4hthpXQVGriQ59VZyYip2HBhdFSQACyDgef51f06119",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/services/store-review/3",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"services",
+								"store-review",
+								"3"
+							]
+						},
+						"description": "{id} = service id\n\n#### required form data:\n\n- rating"
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/vendors",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/vendors",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"vendors"
+							]
+						},
+						"description": "## API Endpoint: Get Vendors\n\n### Request\n\n- **Method:** GET\n    \n- **URL:** `http://192.168.0.192/bookapp/api/vendors`\n    \n\n### Description\n\nThis endpoint retrieves a list of vendors from the system. It does not require any query parameters or request body.\n\n### Expected Response\n\nThe response will include a JSON object containing an array of vendor details. Each vendor object may include properties such as:\n\n- `id`: Unique identifier for the vendor.\n    \n- `name`: Name of the vendor.\n    \n- `contact`: Contact information for the vendor.\n    \n- `address`: Address details of the vendor."
+					},
+					"response": []
+				},
+				{
+					"name": "https://bookapp.test/api/vendor/{username}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/vendor/alexgreen",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"vendor",
+								"alexgreen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forget Password Submit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "goutam052597@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/forget-password",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"forget-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password Submit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "088644",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "11111111",
+									"type": "text"
+								},
+								{
+									"key": "new_password_confirmation",
+									"value": "11111111",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "masud.cst0@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/customer/reset-password",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"customer",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Service InQuiry Message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/services/send-inquiry-message?last_name&first_name=ffff&email=masud.cst0@gmail.com&message=ffffffff&vendor_id=5&service_id=22",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"services",
+								"send-inquiry-message"
+							],
+							"query": [
+								{
+									"key": "last_name",
+									"value": null
+								},
+								{
+									"key": "first_name",
+									"value": "ffff"
+								},
+								{
+									"key": "email",
+									"value": "masud.cst0@gmail.com"
+								},
+								{
+									"key": "message",
+									"value": "ffffffff"
+								},
+								{
+									"key": "vendor_id",
+									"value": "5"
+								},
+								{
+									"key": "service_id",
+									"value": "22"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vendor contact send mail",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Mausd Rana",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "masud.cst0@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": "Subject text here",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "Message text here",
+									"type": "text"
+								},
+								{
+									"key": "vendor_email",
+									"value": "ninalopez@example.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/vendor/contact",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"vendor",
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify payment process",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/verfiy-payment?amount=199&gateway=razorpay&vendor_id=7&booking_date=2025-09-04",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"verfiy-payment"
+							],
+							"query": [
+								{
+									"key": "amount",
+									"value": "199"
+								},
+								{
+									"key": "gateway",
+									"value": "razorpay"
+								},
+								{
+									"key": "vendor_id",
+									"value": "7"
+								},
+								{
+									"key": "booking_date",
+									"value": "2025-09-04"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Service Checkout Api",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "booking_date",
+									"value": "2025-09-08",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "199.99",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Masud Rana",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "masud@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0123456789",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Dhaka",
+									"type": "text"
+								},
+								{
+									"key": "zip_code",
+									"value": "1020",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Bangladesh",
+									"type": "text"
+								},
+								{
+									"key": "staff_id",
+									"value": "18",
+									"type": "text"
+								},
+								{
+									"key": "service_hour_id",
+									"value": "35",
+									"type": "text"
+								},
+								{
+									"key": "max_person",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "payment_method",
+									"value": "Paypal",
+									"type": "text"
+								},
+								{
+									"key": "gateway_type",
+									"value": "Online",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "Completed",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://php82.kreativdev.com/bookapp/demo/api/payment-process",
+							"protocol": "https",
+							"host": [
+								"php82",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"demo",
+								"api",
+								"payment-process"
+							]
+						},
+						"description": "## Payment Process API\n\nThis endpoint is responsible for processing payment transactions for a service booking. It allows users to submit their booking details and payment information to complete the transaction.\n\n### Request\n\n**Method:** POST  \n**URL:** `http://127.0.0.1:8000/api/service/payment-process`\n\n#### Request Body\n\nThe request body must be sent as `form-data` and should include the following parameters:\n\n| Key | Type | Description |\n| --- | --- | --- |\n| `booking_date` | text | The date of the booking. |\n| `amount` | text | The total amount for the service. |\n| `service_id` | text | The identifier for the service being booked. |\n| `name` | text | The name of the person making the booking. |\n| `phone` | text | The contact phone number. |\n| `address` | text | The address for the booking. |\n| `zip_code` | text | The postal code associated with the address. |\n| `country` | text | The country of the booking. |\n| `staff_id` | text | The identifier for the staff member assigned. |\n| `service_hour_id` | text | The identifier for the service hour. |\n| `max_person` | text | The maximum number of persons for the booking. |\n| `user_id` | text | The identifier for the user making the booking. |\n| `payment_method` | text | Example: paypal, stripe etc |\n| gateway_type | text | Example: online, offline |\n| `payment_status` | text | online payment = completed  <br>offline payment = pending |\n\n### Response\n\nThe response will return a status code indicating the result of the payment processing request. A status code of `500` indicates an internal server error. The response will have the following properties:\n\n- **Status Code:** 500\n    \n- **Content-Type:** text/html\n    \n\nIn case of a successful request, the expected response would typically include details about the transaction, but this specific execution resulted in an error, and no further details were provided.\n\n### Note\n\nEnsure that all required fields are filled out correctly to avoid errors during processing. If you encounter a `500` status code, it indicates that there is an issue on the server side that needs to be addressed."
+					},
+					"response": []
+				},
+				{
+					"name": "Langauge chagne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/get-lang/en",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"get-lang",
+								"en"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store FCM token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://bookapp-3.0.test/api/save-fcm-token",
+							"protocol": "https",
+							"host": [
+								"bookapp-3",
+								"0",
+								"test"
+							],
+							"path": [
+								"api",
+								"save-fcm-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Common data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://php82.kreativdev.com/bookapp/demo/api/get-basic",
+							"protocol": "https",
+							"host": [
+								"php82",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"demo",
+								"api",
+								"get-basic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://masud.kreativdev.com/bookapp/pgw/create-payment-intent.php",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\" : 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/pgw/create-payment-intent.php",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"pgw",
+								"create-payment-intent.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://masud.kreativdev.com/bookapp/api/custom-page",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://masud.kreativdev.com/bookapp/api/custom-page",
+							"protocol": "https",
+							"host": [
+								"masud",
+								"kreativdev",
+								"com"
+							],
+							"path": [
+								"bookapp",
+								"api",
+								"custom-page"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "_baseUrl",
+			"value": "https://masud.kreativdev.com/bookapp",
+			"type": "default"
+		},
+		{
+			"key": "vendorBaseUrl",
+			"value": ""
+		}
+	]
+}

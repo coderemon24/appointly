@@ -1,0 +1,57 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    container_name: main_app
+    ports:
+      - "${APP_PORT:-8000}:80"
+    volumes:
+      - ./main-app:/var/www/html
+    depends_on:
+      - db
+    environment:
+      APACHE_DOCUMENT_ROOT: /var/www/html/public
+
+  db:
+    image: mysql:8.0
+    container_name: main_app_db
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE:-main_app}
+      MYSQL_USER: ${DB_USERNAME:-main_app}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-main_app}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-root}
+    ports:
+      - "${DB_PORT:-3307}:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: main_app_pma
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_USER: ${DB_USERNAME:-main_app}
+      PMA_PASSWORD: ${DB_PASSWORD:-root}
+    ports:
+      - "${PHPMYADMIN_PORT:-8081}:80"
+      
+      
+  node:
+    image: node:22
+    container_name: main_app_node
+    working_dir: /var/www/html
+    volumes:
+      - ./main-app:/var/www/html
+    ports:
+      - "5000:5173"
+    command: sh -c "npm install && npm run dev"
+
+volumes:
+  dbdata:
