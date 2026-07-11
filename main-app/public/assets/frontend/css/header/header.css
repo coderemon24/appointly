@@ -313,6 +313,10 @@
   color: var(--text-white);
 }
 
+.navbar-brand {
+    width: 200px;
+}
+
 @media (max-width: 1199.98px) {
   .header-area.header-2 :is(.nav-link:not(:is(.active, .menu-dropdown .nav-link)), .btn-icon, .btn-icon-text, .nice-select, .nice-select::after) {
     color: var(--text-dark);
